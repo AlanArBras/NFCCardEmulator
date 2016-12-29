@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/n"
+        app:backgroundTint="@color/accent"
+        app:elevation="6dp"
+        app:layout_behavior="net.huitel.nfccardemulator.utils.FloatingActionButtonBehavior"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/accent_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_nfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="90dp"
+        android:src="@drawable/nfc"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab3"
+        app:elevation="6dp"
+        app:layout_behavior="net.huitel.nfccardemulator.utils.FloatingActionButtonBehavior"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/fab3_ripple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="65dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab2"
+        app:elevation="6dp"
+        app:layout_behavior="net.huitel.nfccardemulator.utils.FloatingActionButtonBehavior"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/fab2_ripple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_call"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab1"
+        app:elevation="6dp"
+        app:layout_behavior="net.huitel.nfccardemulator.utils.FloatingActionButtonBehavior"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/fab1_ripple" />
+
+</android.support.design.widget.CoordinatorLayout>
